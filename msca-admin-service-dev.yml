@@ -1,0 +1,32 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: msca-admin-service
+  datasource:
+    url: jdbc:mysql://192.168.169.131:3306/jacob?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    instance-id: msca-admin-service8001
+    prefer-ip-address: true
+
+info:
+  app.name: msca
+  company.name: www.xxx.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+mybatis:
+  mapper-locations: /mybatis/mapper/admin/*Mapper.xml
+  type-aliases-package: com.jacob.msca.mode.admin
+
