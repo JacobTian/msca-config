@@ -4,13 +4,7 @@ server:
 spring:
   application:
     name: msca-admin-service
-  datasource:
-    url: jdbc:mysql://192.168.169.131:3306/jacob?useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: root
-    password: root
-    driver-class-name: com.mysql.jdbc.Driver
-  profiles:
-    active: dev
+
 
 eureka:
   client:
