@@ -23,4 +23,5 @@ info:
 mybatis:
   mapper-locations: /mybatis/mapper/admin/*Mapper.xml
   type-aliases-package: com.jacob.msca.mode.admin
+  executor-type: simple
 
